@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terreno 4 Hectáreas - Oportunidad Única de Inversión</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splash">
+        <div class="splash-content">
+            <div class="splash-logo">¡Oportunidad Única!</div>
+            <div class="splash-spinner"></div>
+        </div>
+    </div>
+
+    <div class="landing-page">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo"><i class="fas fa-map-marked-alt"></i> Terreno Premium</div>
+                    <div class="nav-links">
+                        <a href="#" class="active">Inicio</a>
+                        <a href="#ubicacion">Ubicación</a>
+                        <a href="#detalles">Detalles</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                    <div class="nav-icons">
+                        <a href="#" class="nav-icon" id="navWhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="nav-icon" id="navEmail"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-label">¡ÚLTIMA OPORTUNIDAD!</p>
+                <h1>4 Hectáreas<br>de Inversión</h1>
+                <p class="hero-subtitle">Terreno estratégico a espaldas del estadio de béisbol. A 5 minutos del Tren Maya y 9 minutos de Izamal.</p>
+                <div class="hero-price-box">
+                    <span class="price-label">Precio por m²</span>
+                    <span class="price-amount">$400 MXN</span>
+                    <span class="price-compare">vs $2,000 - $2,500 de otros terrenos</span>
+                </div>
+                <a href="#" class="btn-hero" id="heroWhatsApp" target="_blank">CONTACTAR AHORA</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="ubicacion">
+            <div class="container">
+                <div class="section-header">
+                    <h2>VENTAJAS DE UBICACIÓN</h2>
+                    <p>Ubicación estratégica con alto potencial de crecimiento</p>
+                </div>
+                <div class="features-grid" id="featuresContainer"></div>
+            </div>
+        </section>
+
+        <!-- Tour Virtual 360° -->
+        <section class="gallery-section" id="galeria">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-vr-cardboard"></i> TOUR VIRTUAL 360°</h2>
+                    <p>Explora el terreno con vistas panorámicas interactivas</p>
+                </div>
+                <div class="gallery-grid-embed" id="toursContainer"></div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="details-section" id="detalles">
+            <div class="container">
+                <div class="details-grid" id="detailsContainer"></div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>¡No te pierdas esta oportunidad!</h2>
+                    <p>El valor de este terreno va a subir muy rápido. Aprovecha esta oferta ahora y evita pagar mucho más dentro de unas semanas.</p>
+                    <a href="#" class="cta-button" id="ctaWhatsApp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contact-section">
+            <div class="contact-wrapper" id="contactContainer"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-simple" id="footerContent">
+                    <p>Terreno de 4 Hectáreas - Oportunidad de Inversión</p>
+                    <p class="footer-phone"><i class="fas fa-envelope"></i> <span id="footerEmail"></span></p>
+                    <p class="footer-phone"><i class="fab fa-whatsapp"></i> <span id="footerWhatsApp"></span></p>
+                    <p>&copy; 2025 Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Botones flotantes móvil -->
+    <div class="floating-buttons" id="floatingButtons">
+        <div class="float-options">
+            <a href="#" class="float-btn whatsapp-btn" id="floatWhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="float-btn" id="floatEmail"><i class="fas fa-envelope"></i></a>
+        </div>
+        <button class="float-toggle" onclick="this.parentElement.classList.toggle('active')">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    <script src="data/data_renders.js"></script>
+    <script src="data/details_section.js"></script>
+    <script src="data/contact_section.js"></script>
+    <script src="js/features.js"></script>
+</body>
+</html>
